@@ -1,0 +1,7 @@
+cd /root/CoverageWebApplication
+spawn /root/apache-ant-1.9.16/bin/ant deploy
+expect -re ".*Please enter the directory to deploy.*"
+send "/usr/local/tomcat/webapps/ROOT\n"
+expect -re ".*Do you want to overwrite.*"
+send "y\n"
+expect -re ".*BUILD SUCCESSFUL.*"
