@@ -13,5 +13,5 @@ docker build -t coverage-web-application .
 ## Run
 
 ```bash
-docker run -ti --rm -d --name mycoverage -p 8080:8080 coverage-web-application
+docker run --rm -d --name mycoverage -p 8080:8080 coverage-web-application
 ```
